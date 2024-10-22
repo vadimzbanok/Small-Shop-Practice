@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+ID:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+.hero strong {
+  font-size: 6rem;
+}
+.hero {
+  height: 50rem;
+  background-image: url(./images/hero.jpg);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  text-align: right;
+  flex-direction: column;
+  padding-right: 2rem;
+}
+
+.hero-container {
+  background-color: rgb(61, 6, 6);
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.hero > h1 {
+  font-family: "IM Fell English SC", serif;
+  font-size: 3.5rem;
+}
+
+.hero > p {
+  font-family: "IM Fell English SC", serif;
+  font-size: 1.5rem;
+}
+
+header {
+  padding: 12px;
+  background-color: rgba(207, 20, 20, 0.61);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  backdrop-filter: blur(200px);
+}
+
+nav {
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  width: 90%;
+  margin: auto;
+
+  /* Display Flex */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.7rem;
+}
+
+.logo-icon {
+  font-size: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav-item {
+  display: flex;
+
+  margin: 10px;
+
+  gap: 10px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*CON FLEX COLUMNA POSICION UNSERE PRODUKTE DEBAJO, VIENE BIEN CUANDO TIENES FLEX Y QUIERES ALINEAR TODOS LOS ELEMENTOS*/
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main-item {
+  width: 100%;
+  /* display flex */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+.cards {
+  height: 90%;
+  width: 90%;
+
+  /* Display flex */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.card-item {
+  border: 2px solid black;
+  height: 90%;
+  overflow: hidden;
+  border-radius: 2rem;
+  /*Mx widht permite que las tarjetas se muevan con el flex wwrap y nos ahorramos el media queries*/
+  max-width: 400px;
+  position: relative;
+}
+
+.aktion {
+  background-color: rgb(207, 20, 20);
+  color: white;
+  font-weight: bold;
+  padding: 1.5rem;
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  font-family: "Playwrite ID", cursive;
+}
+
+.card-content {
+  height: 50%;
+  padding: 0rem 2rem 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h3 {
+  font-size: 1.5;
+}
+p {
+  font-size: 1;
+}
+
+.card-img {
+  height: 450px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-title {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.card-title::after {
+  content: "\f35d";
+  font-family: "FontAwesome";
+  margin-left: 10px;
+}
+
+.card-bes {
+  margin-bottom: 3rem;
+  color: gray;
+}
+
+.card-tags {
+  display: flex;
+  gap: 10px;
+}
+
+.tag-1,
+.tag-2,
+.tag-3 {
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+}
+.tag-1 {
+  background-color: lightcoral;
+}
+.tag-2 {
+  background-color: lightgreen;
+}
+.tag-3 {
+  background-color: lightblue;
+}
+
+strong {
+  font-size: 1.5rem;
+  color: red;
+}
+
+.tag-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*INFORMATION SECTION TABLA ZEBRA STREIFEN*/
+
+.information {
+  background-color: rgb(207, 20, 20);
+  width: 80vw;
+  height: 80%;
+  margin-bottom: 20rem;
+}
+
+.information > h2 {
+  font-family: "Playwrite ID", cursive;
+  color: white;
+  text-align: center;
+  background-color: rgb(207, 20, 20);
+}
+
+table {
+  width: 100%;
+  font-size: 1.4rem;
+}
+
+table,
+th,
+tr,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 1rem;
+}
+
+tr:nth-child(odd) {
+  background-color: lightgrey;
+}
+
+/*FORM SECTION*/
+
+.contact {
+  margin-bottom: 10rem;
+  width: 80%;
+}
+
+.contact > h2 {
+  font-family: "Playwrite ID", cursive;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form h3 {
+  margin-bottom: 2rem;
+}
+
+label,
+input,
+textarea {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+input,
+textarea {
+  margin-bottom: 3rem;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: none;
+}
+
+/*AL clickear se pone verde con :focus*
+
+input[type="email"] para seleccionar en verde solo el email al clickar.*/
+
+input:focus {
+  outline-color: green;
+}
+
+.submit-btn {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  width: 15rem;
+  padding: 1rem 0;
+  background-color: rgb(207, 20, 20);
+  border-radius: 200px;
+}
+
+/* FOOTER*/
+
+footer {
+  background-color: rgba(207, 20, 20, 0.74);
+  position: bottom;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.icon-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icon a {
+  font-size: 2rem;
+}
+
+/* MEDIA QUERIES SECTION*/
+@media (max-width: 768px) {
+  .nav-item {
+    flex-direction: column;
+  }
+}
